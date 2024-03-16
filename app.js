@@ -19,14 +19,13 @@ function PageTransitions() {
             sectBtns.forEach((btn) => {
                 btn.classList.remove('active');
             });
+            sections.forEach((section) => {
+                section.classList.remove('active');
+            });
+    
+            const element = document.getElementById(id);
+            element.classList.add('active');
         };
-
-        sections.forEach((section) => {
-            section.classList.remove('active');
-        });
-
-        const element = document.getElementById(id);
-        element.classList.add('active');
     });
 };
 
